@@ -1,0 +1,141 @@
+/* 
+    CORES
+    VERDE ESCURO: #065902;
+    VERDE MAIS CLARO: #078c31
+    AMARELO: #f2b705
+    VERMELHO MAIS CALRO: #f03733
+    VERMELHO ESCURO; #D90404
+
+    CINZA ESCURO: #404040
+    CINZA BEM CLARO: #F7F7F7
+
+*/
+
+/* ========================= */
+/* CONFIGURACOES GERAIS */
+/* ========================= */
+:root {
+  --dark-green: #065902;
+  --light-green: #078c31;
+  --yellow: #f2b705;
+  --light-red: #f03733;
+  --dark-red: #d90404;
+  --dark-gray: #404040;
+  --light-gray: #f7f7f7;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--light-gray);
+  text-decoration: none;
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+header{
+    /* transicao de imagem - sombreado*/
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0)), url(../_imagens/secao08-background-capa.jpg);
+   
+    background-size: cover;
+    background-position: center center;
+
+    width: 100%;
+    height: 100vh;
+    /* borda superior */
+    border-top: 5px solid var(--light-green);
+
+    /* Linha inferior curvada */
+    clip-path: polygon(0 0, 100% 0,  100% 97%, 0 100%);
+
+
+}
+
+header nav#menu-header {
+  width: 95%;
+  height: 200px;
+
+  margin: 10px auto;
+
+  /* para que possamos adionar  position: absolute; em elementos filhos */
+  position: relative;
+
+}
+
+header nav#menu-header div#logo {
+  background-image: url(../_imagens/secao08-logo-pizzaria-fontenelle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+
+  float: left;
+
+}
+
+header nav#menu-header ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  margin-top: 70px;
+  height: 40px;
+}
+
+header nav ul#nav-menu {
+  float: left;
+}
+
+header nav ul#nav-login {
+  float: right;
+}
+
+header nav#menu-header ul a {
+  padding: 10px 30px;
+  border-radius: 100px;
+}
+
+header nav#menu-header ul a#criar-conta {
+  border: 1px solid var(--light-gray);
+  padding: 9px 20px;
+}
+
+header nav#menu-header ul a:hover {
+  padding: 10px 30px;
+  background-color: var(--yellow);
+
+  transition-duration: 0.8s;
+}
+
+header nav ul ion-icon#icone-user {
+  width: 45px;
+  height: 45px;
+
+  color: var(--light-gray);
+  margin-top: -13px;
+  margin-left: 20px;
+}
+
+header nav ul ion-icon#icone-user:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+header div#chamada{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+
+    /* Centraiza a div em posicao absoluto dentro do espeaco do elempto pai */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,99 @@
+/* 
+    TIPOGRAFIA
+    font-family: "Pacifico", cursive;
+    font-family: "Fredericka the Great", serif;
+    font-family: "Open Sans", sans-serif;
+
+    CORES
+    VERDE ESCURO: #065902;
+    VERDE MAIS CLARO: #078c31
+    AMARELO: #f2b705
+    VERMELHO MAIS CALRO: #f03733
+    VERMELHO ESCURO; #D90404
+
+    CINZA ESCURO: #404040
+    CINZA BEM CLARO: #F7F7F7
+
+*/
+
+/* ========================= */
+/* CONFIGURACOES GERAIS */
+/* ========================= */
+:root {
+  --dark-green: #065902;
+  --light-green: #078c31;
+  --yellow: #f2b705;
+  --light-red: #f03733;
+  --dark-red: #d90404;
+  --dark-gray: #404040;
+  --light-gray: #f7f7f7;
+}
+* {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fredericka the Great", serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--dark-red);
+  font-weight: 200;
+}
+
+h4,
+h5,
+h6 {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--yellow);
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+p,
+li,
+a {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+header nav#menu-header ul a {
+  font-size: 0.8rem;
+}
+header div#chamada{
+    text-align: center;
+}
+header div#chamada h1{
+    color: var(--light-gray);
+    text-shadow: 4px 6px 10px black;
+}
+
+header div#chamada h4{
+   font-size: 2,5rem;
+    text-shadow: 4px 6px 10px black;
+    margin-bottom: 55px;
+}
+
+header div#chamada a#escolha-plano{
+    color: var(--light-gray);
+   font-size: 1.1rem;
+    font-weight: 600;
+    padding: 20px 80px;
+    border-radius: 50px;
+    background-color: var(--light-green);
+
+    cursor: pointer;
+    background: linear-gradient(rgba(7,140,49,55)0%,rgba(6,89,2,35)50%,rgba(6,89,2,35)100% );
+ }
+ 
