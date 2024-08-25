@@ -57,12 +57,37 @@ h1 {
 
 h2 {
   font-size: 4rem;
+  font-weight: 200;
+}
+h2::after{
+  display: block;
+  background-color: var(--light-green);
+  height: 5px;
+  width: 100px;
+  margin: 40px auto 30px;
+  content: " ";
+}
+
+h4{
+  font-size: 1.5rem;
+  font-weight: 150;
+  padding: 20px;
 }
 
 p,
 li,
 a {
   font-family: "Open Sans", sans-serif;
+}
+
+p.destaque{
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-weight: 300;
+
+  text-align: center;
+  /* verificar o uso de rem e porcentagem quando tratado com tamanhos relativos */
+  width: 60%; 
 }
 
 /* ========================= */
@@ -96,4 +121,20 @@ header div#chamada a#escolha-plano{
     cursor: pointer;
     background: linear-gradient(rgba(7,140,49,55)0%,rgba(6,89,2,35)50%,rgba(6,89,2,35)100% );
  }
- 
+
+/* ========================= */
+/* SECTION DOMINGO PERFEITO */
+/* ========================= */
+section#domingo-perfeito div#domingo-perfeito-centro div#pontos-chaves-mestre div.pontos-chaves h4{
+  color: var(--dark-gray);
+}
+
+section#domingo-perfeito div#domingo-perfeito-centro div#pontos-chaves-mestre div.pontos-chaves h4::after{
+  display: block;
+  background-color: var(--light-green);
+
+  height: 5px;
+  width: 30%;
+  margin: 20px auto 10px;
+  content: " ";
+}
